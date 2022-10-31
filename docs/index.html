@@ -22,31 +22,52 @@
       <h2 class="main__text">
         Calcula el precio de tus productos con descuentos
       </h2>
-      <section class="calculate">
-        <form class="calculate__form">
-          <label for="InputPrice" class="calculate__form-label"
-            >Escribe el precio de tu producto:</label
-          >
-          <input id="InputPrice" type="number" class="calculate__form-input" />
+      <section class="main__section">
+        <article class="calculate">
+          <form class="calculate__form">
+            <label for="InputPrice" class="calculate__form-label"
+              >Escribe el precio de tu producto:</label
+            >
+            <input
+              id="InputPrice"
+              type="number"
+              class="calculate__form-input"
+            />
 
-          <label for="InputCoupon" class="calculate__form-label"
-            >Escribe el cupón de descuento:</label
-          >
-          <input id="InputCoupon" type="text" class="calculate__form-input" />
-        </form>
+            <label for="InputCoupon" class="calculate__form-label"
+              >Escribe el cupón de descuento:</label
+            >
+            <input id="InputCoupon" type="text" class="calculate__form-input" />
+          </form>
 
-        <div class="calculate__container">
-          <button
-            type="button"
-            onclick="onClickButtonPriceDiscount()"
-            class="calculate__container-button"
-          >
-            Calcular
-          </button>
-          <p id="PercentageDiscount" class="calculate__container-result"></p>
-          <p id="PriceDiscount" class="calculate__container-result"></p>
-          <p id="ResultPrice" class="calculate__container-result"></p>
-        </div>
+          <div class="calculate__container">
+            <button
+              type="button"
+              onclick="onClickButtonPriceDiscount()"
+              class="calculate__container-button"
+            >
+              Calcular
+            </button>
+          </div>
+        </article>
+        <article class="display">
+          <div class="display__container">
+            <h3 class="display__container-item1">Producto</h3>
+            <h3 class="display__container-item2" id="TextPercentage">-%</h3>
+            <div></div>
+            <p class="display__container-item3" id="TextPriceWithoutDiscount">
+              00€
+            </p>
+            <p class="display__container-item4" id="TextPriceWithDiscount">
+              00€
+            </p>
+          </div>
+        </article>
+      </section>
+      <section class="result">
+        <p id="PercentageDiscount" class="result__text"></p>
+        <p id="PriceDiscount" class="result__text"></p>
+        <p id="ResultPrice" class="result__text"></p>
       </section>
     </main>
     <footer class="footer">

@@ -106,6 +106,25 @@
         }
     }
 }
+
+.coupons{
+        background-color: #d2d0d0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        border-style: dotted;
+
+        &__container{
+            padding: 5px;
+
+            &-items{
+                padding: 4px;
+                font-size: 12px;
+            }
+        }
+}
+
 .result{
     display: flex;
     flex-direction: column;
@@ -116,3 +135,4 @@
             font-size: 18px;
         }
     }
+

@@ -65,11 +65,11 @@ const onClickButtonPriceDiscount = () =>{
     displayTextPercentage.innerText = '-'+ discount +'%';
 
     const displayTextPriceWithoutDiscount = document.getElementById('TextPriceWithoutDiscount');
-    displayTextPriceWithoutDiscount.innerText = 
+    displayTextPriceWithoutDiscount.innerText =
      priceValue +'€';
 
-     const displayTextPriceWithDiscount = document.getElementById('TextPriceWithDiscount');
-     displayTextPriceWithDiscount.innerText = 
+    const displayTextPriceWithDiscount = document.getElementById('TextPriceWithDiscount');
+    displayTextPriceWithDiscount.innerText =
      priceWithDiscount +'€';
   }
 };
