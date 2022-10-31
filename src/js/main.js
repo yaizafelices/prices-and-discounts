@@ -60,6 +60,17 @@ const onClickButtonPriceDiscount = () =>{
 
     const priceDiscount = document.getElementById('PriceDiscount');
     priceDiscount.innerText = 'Te has ahorrado: ' + discountPrice + '€';
+
+    const displayTextPercentage = document.getElementById('TextPercentage');
+    displayTextPercentage.innerText = '-'+ discount +'%';
+
+    const displayTextPriceWithoutDiscount = document.getElementById('TextPriceWithoutDiscount');
+    displayTextPriceWithoutDiscount.innerText = 
+     priceValue +'€';
+
+     const displayTextPriceWithDiscount = document.getElementById('TextPriceWithDiscount');
+     displayTextPriceWithDiscount.innerText = 
+     priceWithDiscount +'€';
   }
 };
 
